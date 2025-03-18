@@ -1,0 +1,789 @@
+:root {
+            --primary-color: #b01b2f;
+            --secondary-color: #ffffff;
+            --dark-color: #222222;
+            --light-color: #f4f4f4;
+            --transition: all 0.3s ease;
+        }
+        ::selection {
+            color: white;
+            background: #b01b2f;
+          }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+        }
+        .hasiera {
+            width: 100%;
+            max-width: 100vw !important;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 2rem;
+        }
+        .hasiera h1, 
+.hasiera .subtitle,
+.hasiera p,
+.hasiera .btn {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}        
+.hasiera h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.hasiera a {
+    margin-top:4rem;
+}
+        header {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 2rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            font-family: Comfortaa, sans-serif;
+        }                       
+        .logo {
+            max-width: 330px;
+        }
+        header .logo {
+            position: absolute;
+            left: 2rem;
+            top: 2rem;
+            max-width: 330px;
+        }        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }        
+        .btn {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 0.8rem 1.5rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: bold;
+            margin-top: 1rem;
+        }        
+        .btn:hover {
+            background: var(--light-color);
+            transform: scale(1.05);
+        }        
+        section {
+            padding: 4rem 0;
+        }        
+        section:nth-of-type(odd) {
+            background-color: var(--light-color);
+        }        
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            font-size: 2rem;
+        }        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }        
+        .card {
+            background: var(--secondary-color);
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }        
+        .card:hover {
+            transform: translateY(-5px);
+        }        
+        .card-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-align: center;
+        }        
+        .card h3 {
+            margin-bottom: 1rem;
+            text-align: center;
+        }        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--primary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+        }        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -16px;
+            background-color: var(--secondary-color);
+            border: 4px solid var(--primary-color);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }        
+        .left {
+            left: 0;
+        }        
+        .right {
+            left: 50%;
+        }        
+        .right::after {
+            left: -16px;
+        }        
+        .timeline-content {
+            padding: 30px;
+            background-color: var(--secondary-color);
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        /* Estilos para la subsección del muro de Sebastián Bayo */
+.muro-bayo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+    background-color: rgba(176, 27, 47, 0.03);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.muro-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.muro-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.muro-info p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.muro-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.muro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.muro-image .caption {
+    margin-top: 0.8rem;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+        .pixel-grid {
+            display: grid;
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            width: 100%;
+            height: 100%;
+        }        
+        .pixel {
+            background-color: rgba(176, 27, 47, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+        }        
+        .pixel:hover {
+            background-color: rgba(176, 27, 47, 0.8);
+            transform: scale(1.1);
+            z-index: 10;
+        }        
+        .mural-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('../img/fotomosaico_54x67.png') center/cover;
+            opacity: 0.1;
+            transition: var(--transition);
+        }
+        .join-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--secondary-color);
+            padding: 2rem;
+            margin-top: 4rem;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }        
+        input, textarea, select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }        
+        footer {
+            background: var(--dark-color);
+            color: var(--secondary-color);
+            text-align: center;
+            padding: 2rem 0;
+        }        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0;
+        }        
+        .social-icons a {
+            color: var(--secondary-color);
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }        
+        .social-icons a:hover {
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        /* Estilos para el visualizador mejorado */
+.visualizer {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    margin: 2rem auto;
+    background-color: #300a10;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+.pixel-grid-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.pixel-grid {
+    display: grid;
+    /* El grid-template se define dinámicamente por JS */
+    width: 100%;
+    height: 100%;
+}
+.pixel {
+    transition: all 0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.pixel.revealed {
+    transform: scale(1.03);
+    z-index: 5;
+    border-color: rgba(27, 176, 156, 0.2);
+    box-shadow: 0 0 4px rgba(27, 176, 156, 0.5);
+}
+.pixel[data-bicycle="true"]:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.03);
+    z-index: 5;
+}
+/* Contenedor para los botones */
+.button-container {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    z-index: 20;
+}
+/* Botón de revelar */
+.reveal-button {
+    background-color: rgba(27, 176, 156, 0.6);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+}
+.reveal-button:hover {
+    background-color: rgba(27, 176, 156, 0.8);
+    transform: scale(1.05);
+}
+.reveal-button:disabled {
+    background-color: rgba(27, 176, 156, 0.3);
+    cursor: not-allowed;
+    transform: none;
+}
+/* Botón de reinicio */
+.reset-button {
+    background-color: rgba(200, 200, 200, 0.3);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+}
+.reset-button:hover {
+    background-color: rgba(220, 220, 220, 0.5);
+    transform: scale(1.05);
+}
+/* Mensaje de completado */
+.completion-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(27, 176, 156, 0.9);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    z-index: 30;
+    box-shadow: 0 0 30px rgba(27, 176, 156, 0.7);
+    animation: fadeIn 0.8s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.message-content {
+    margin-bottom: 10px;
+}
+/* Botón para cerrar el mensaje */
+.close-message {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+.close-message:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.visualizer.completed {
+    box-shadow: 0 0 30px rgba(27, 176, 156, 0.7);
+}
+.instructions {
+    text-align: center;
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: #555;
+}
+/* Estilos para la sección Relación con Bienal */
+.bienal-section {
+    background-color: rgba(0, 215, 2, 0.05);
+}
+
+.bienal-title {
+    position: relative;
+}
+
+.bienal-title-text {
+    display: inline-block;
+    margin-right: 0px;
+}
+
+.bienal-icon {
+    vertical-align: middle;
+}
+
+.bienal-icon-path {
+    fill: #00d702;
+    fill-opacity: 1;
+    fill-rule: nonzero;
+    stroke: none;
+}
+
+.bienal-card {
+    border-left: 3px solid #00d702;
+}
+
+.bienal-card-icon {
+    color: #00d702;
+}
+
+.bienal-quote-card {
+    margin-top: 2rem;
+    border-left: 3px solid #00d702;
+    position: relative;
+    overflow: hidden;
+}
+
+.bienal-background-icon {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    opacity: 0.1;
+    width: 100px;
+    height: 150px;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='150' viewBox='0 0 9.35 15.74' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m 0,0 16.635,44.628 h 9.869 L 9.807,0 Z' style='fill:%2300d702;fill-opacity:1;fill-rule:nonzero;stroke:none;' transform='matrix(0.35277777,0,0,-0.35277777,0,15.74)'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bienal-quote {
+    font-style: italic;
+    border-left: 4px solid #00d702;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+.bienal-button-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.bienal-button {
+    background-color: #00d702;
+    color: white;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+.colab-promo {
+        background-color: #f8f8f8;
+        border-radius: 10px;
+        padding: 2rem;
+        margin: 3rem 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }    
+    .colab-promo h3 {
+        color: var(--primary-color, #b01b2f);
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }    
+    .colab-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.colab-info {
+    flex: 1;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+    
+    .colab-info p {
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        color: #444;
+    }    
+    .colab-info ul {
+        margin-bottom: 1.5rem;
+        padding-left: 1.2rem;
+    }    
+    .colab-info li {
+        margin-bottom: 0.5rem;
+        color: #444;
+    }    
+    .colab-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.colab-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}    
+    .caption {
+        margin-top: 0.5rem;
+        font-style: italic;
+        color: #666;
+        font-size: 0.9rem;
+    }    
+    .colab-button {
+        display: inline-block;
+        background-color: #1a73e8;
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(26, 115, 232, 0.3);
+    }    
+    .colab-button:hover {
+        background-color: #0d62d1;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(26, 115, 232, 0.4);
+    }    
+    .colab-button i {
+        margin-left: 8px;
+    }
+    /* Selector de idioma */
+.language-selector {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    padding: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: var(--transition);
+    font-size: 0.85rem;
+}
+
+.lang-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+/* Estilos para la animación 3D del header */
+header {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh; /* Altura mínima para apreciar bien la animación */
+}
+
+.header-3d-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none; /* Permite que los clics pasen a través de la animación */
+}
+
+/* Asegurar que el contenido del header esté por encima de la animación */
+header .container {
+    height: 100vh;
+    position: relative;
+    margin:0 auto;
+    z-index: 1;
+    border-radius: 15px;
+    padding: 2rem;
+}
+      /* Estilos para dispositivos móviles */
+        @media(max-width: 768px) {
+            header .container {
+                margin: 1rem auto;
+                padding: 1.5rem;
+            }
+            .hasiera h1 {
+                font-size: 2.5rem;
+            }
+            .muro-bayo-container {
+                flex-direction: column-reverse;
+                padding: 1.5rem;
+            }
+            
+            .muro-info h3 {
+                text-align: center;
+            }
+            .timeline::after {
+                left: 31px;
+            }            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }            
+            .timeline-item::after {
+                left: 18px;
+            }            
+            .right {
+                left: 0%;
+            }
+            .colab-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .colab-info, 
+    .colab-image {
+        width: 100%;
+        min-width: auto;
+        max-width: 100%;
+    }
+    
+    .colab-promo {
+        padding: 1.5rem;
+        margin: 2rem 0;
+    }
+    
+    .visualizer {
+        height: 350px;  /* Altura reducida para móviles */
+    }
+            }
+        @media(max-width: 1150px) {
+    header .logo {
+        position: static;
+        display: block;
+        margin: 2rem auto 0;
+    } 
+}
+#toast-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+}
+
+.toast {
+    min-width: 250px;
+    margin-top: 10px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: toastFadeIn 0.3s ease forwards;
+    display: flex;
+    align-items: center;
+}
+
+.toast-success {
+    background-color: var(--primary-color, #FF3C38);
+    color: white;
+}
+
+.toast-error {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.toast-info {
+    background-color: #0288d1;
+    color: white;
+}
+
+.toast-icon {
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+.toast-message {
+    flex-grow: 1;
+}
+
+.toast-close {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: 8px;
+    opacity: 0.7;
+}
+
+.toast-close:hover {
+    opacity: 1;
+}
+
+@keyframes toastFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes toastFadeOut {
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
