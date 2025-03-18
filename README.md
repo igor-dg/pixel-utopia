@@ -32,7 +32,9 @@ pixel-utopia/
 │   ├── translations.js    # Diccionario de traducciones ES/EU
 │   └── visualizer.js      # Lógica del visualizador interactivo
 ├── img/                   # Imágenes y recursos gráficos
-└── README.md              # Este archivo
+├── README.md              # Este archivo
+├── LICENSE                # Términos de licencia
+└── DEPENDENCIES.md        # Listado de dependencias externas del proyecto
 ```
 
 ## Requisitos
@@ -47,7 +49,7 @@ pixel-utopia/
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/bizikleteroak/pixel-utopia.git
+   git clone https://github.com/igor-dg/pixel-utopia.git
    cd pixel-utopia
    ```
 
