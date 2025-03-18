@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel-Utopía: De la congestión al fluir colectivo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="icon" href="https://idg.eus/bizikleteroak/img/icon.svg" type="image/svg+xml">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="https://idg.eus/bizikleteroak/img/icon.svg"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="language-selector">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="eu">EU</button>
+    </div>
+
+    <header>
+        <div class="container hasiera">            
+            <h1 data-i18n="header.title">PIXEL-UTOPÍA</h1>
+            <p class="subtitle" data-i18n="header.subtitle">DE LA CONGESTIÓN AL FLUIR COLECTIVO</p>
+            <p data-i18n="header.description">Una intervención artística sobre las divisiones urbanas</p>
+            <a href="#participar" class="btn" data-i18n="header.button">¡PARTICIPA!</a>
+            <img src="https://idg.eus/bizikleteroak/img/logo_bizikleteroak_invert.svg" alt="Logo Bizikleteroak" class="logo">
+        </div>
+    </header>
+
+    <section id="concepto">
+        <div class="container">
+            <h2 data-i18n="concept.title">EL CONCEPTO</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-th"></i>
+                    </div>
+                    <h3 data-i18n="concept.card1.title">Miles de fotos, una visión</h3>
+                    <p data-i18n="concept.card1.description">Utilizando miles de fotografías de congestión vehicular en Vitoria-Gasteiz (cada una funcionando como un "pixel"), compondremos una imagen a gran escala que, vista desde la distancia, revelará una ciudad utópica con espacios libres del coche.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 data-i18n="concept.card2.title">Relieve tridimensional</h3>
+                    <p data-i18n="concept.card2.description">La instalación utilizará diferentes profundidades para cada fotografía, creando un relieve que simboliza la tridimensionalidad del tejido urbano y las múltiples capas de la ciudad.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3 data-i18n="concept.card3.title">Transformación perceptiva</h3>
+                    <p data-i18n="concept.card3.description">La paradoja visual (imágenes negativas componen una imagen positiva) refleja la paradoja central de la utopía: debemos visualizar lo mejor para superar lo peor.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Subsección sobre el muro de Sebastián Bayo -->
+<div class="container muro-bayo-container">
+    <div class="muro-info">
+        <h3 data-i18n="concept.muro.title">El muro "Utopía: prohibido el paso"</h3>
+        <p data-i18n="concept.muro.description">Nuestra intervención se desarrolla sobre el muro efímero diseñado por Sebastián Bayo para la Bienal Mugak 2025, que dividirá la Plaza de la Virgen Blanca durante el evento. Este muro de 4 metros de altura, titulado "Utopía: prohibido el paso", es la base arquitectónica sobre la que aplicaremos nuestra propuesta de fotomosaico tridimensional.</p>
+        <p data-i18n="concept.muro.impact">Transformamos esta barrera arquitectónica en un lienzo comunicativo que invita a reflexionar sobre otras barreras urbanas invisibles: las que generan el tráfico y la congestión vehicular en nuestra ciudad. De esta manera, establecemos un diálogo entre la obra original y nuestra intervención, ambas cuestionando diferentes tipos de límites en el espacio urbano.</p>
+    </div>
+    <div class="muro-image">
+        <img src="img/muro.png" alt="Muro Utopía: prohibido el paso de Sebastián Bayo" />
+        <p class="caption" data-i18n="concept.muro.caption">Renderizado del muro "Utopía: prohibido el paso" en la Plaza de la Virgen Blanca</p>
+    </div>
+</div>
+    </section>
+    <!-- Sección sobre relación con Bienal -->
+<section id="relacion-bienal" class="bienal-section">
+    <div class="container">
+        <h2 class="bienal-title">
+            <span class="bienal-title-text" data-i18n="bienal.title">RELACIÓN CON LA BIENAL MUGAK</span>
+            <svg width="30" height="50" viewBox="0 0 9.35 15.74" class="bienal-icon">
+                <path d="m 0,0 16.635,44.628 h 9.869 L 9.807,0 Z" class="bienal-icon-path" transform="matrix(0.35277777,0,0,-0.35277777,0,15.74)"/>
+            </svg>
+        </h2>
+        
+        <div class="grid">
+            <div class="card bienal-card">
+                <div class="card-icon bienal-card-icon">
+                    <i class="fas fa-archway"></i>
+                </div>
+                <h3 data-i18n="bienal.card1.title">Reinterpretación del espacio</h3>
+                <p data-i18n="bienal.card1.description">Transformamos la naturaleza divisoria del muro en un lienzo tridimensional, convirtiendo una barrera arquitectónica en un elemento comunicativo, dialogando con las ideas de Yona Friedman sobre arquitecturas adaptables.</p>
+            </div>
+            
+            <div class="card bienal-card">
+                <div class="card-icon bienal-card-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3 data-i18n="bienal.card2.title">Arquitectura radical</h3>
+                <p data-i18n="bienal.card2.description">Conectamos conceptualmente con movimientos como Archigram y Superstudio, que utilizaban el collage y la superposición de imágenes como herramientas críticas frente a la ciudad moderna.</p>
+            </div>
+            
+            <div class="card bienal-card">
+                <div class="card-icon bienal-card-icon">
+                    <i class="fas fa-chess-rook"></i>
+                </div>
+                <h3 data-i18n="bienal.card3.title">Castillos en el aire</h3>
+                <p data-i18n="bienal.card3.description">Materializamos la metáfora de Lewis Munford: construimos un castillo visual (la imagen utópica) utilizando como ladrillos las evidencias de nuestro fracaso colectivo (las fotos de atascos).</p>
+            </div>
+        </div>
+        
+        <div class="card bienal-quote-card">
+            <div class="bienal-background-icon"></div>
+            
+            <p class="bienal-quote" data-i18n="bienal.quote">
+                "La percepción cambia con la distancia. Al acercarse, se ven los problemas individuales; al alejarse, emerge la visión utópica. Esta relación entre lo micro y lo macro es esencial en el pensamiento arquitectónico contemporáneo."
+            </p>
+            
+            <p data-i18n="bienal.paragraph1">Nuestra intervención tridimensional no es meramente estética sino conceptual, pues representa la volumetría urbana y los diferentes planos de la ciudad. Cada fotografía situada a distinta profundidad evoca la compleja estratificación del tejido urbano, creando una lectura arquitectónica del espacio en múltiples capas.</p>
+            
+            <p data-i18n="bienal.paragraph2">El proyecto se alinea con las corrientes contemporáneas de arquitectura sostenible que buscan reequilibrar la relación entre edificación, movilidad y espacio público. La imagen utópica que componemos representa un modelo de ciudad que muchos arquitectos y urbanistas contemporáneos defienden: espacios públicos liberados del vehículo motorizado y devueltos a la escala humana.</p>
+        </div>
+        
+        <div class="bienal-button-container">
+            <a href="https://bienalmugak.eus" target="_blank" class="btn bienal-button" rel="noopener" data-i18n="bienal.button">Conoce más sobre la Bienal Internacional de Arquitectura de Euskadi, Mugak<b>/</b></a>
+        </div>
+    </div>
+</section>
+
+    <section id="visualizacion">
+        <div class="container">
+            <h2 data-i18n="visualization.title">VISUALIZACIÓN</h2>
+            <div class="visualizer">
+                <div class="pixel-grid">
+                </div>
+                <div class="mural-image"></div>
+            </div>
+            <div class="colab-promo">
+                <h3 data-i18n="visualization.colab.title">CREA TU PROPIO MOSAICO UTÓPICO CON GOOGLE COLAB
+                <svg viewBox="0 0 24 24" style="width: 40px; height: 40px; vertical-align: middle; margin-left: 8px;">
+                    <g id="colab-logo">
+                        <path d="M4.54,9.46,2.19,7.1a6.93,6.93,0,0,0,0,9.79l2.36-2.36A3.59,3.59,0,0,1,4.54,9.46Z" style="fill:#e8710a"></path>
+                        <path d="M2.19,7.1,4.54,9.46a3.59,3.59,0,0,1,5.08,0l1.71-2.93h0l-.1-.08h0A6.93,6.93,0,0,0,2.19,7.1Z" style="fill:#f9ab00"></path>
+                        <path d="M11.34,17.46h0L9.62,14.54a3.59,3.59,0,0,1-5.08,0L2.19,16.9a6.93,6.93,0,0,0,9,.65l.11-.09" style="fill:#f9ab00"></path>
+                        <path d="M12,7.1a6.93,6.93,0,0,0,0,9.79l2.36-2.36a3.59,3.59,0,1,1,5.08-5.08L21.81,7.1A6.93,6.93,0,0,0,12,7.1Z" style="fill:#f9ab00"></path>
+                        <path d="M21.81,7.1,19.46,9.46a3.59,3.59,0,0,1-5.08,5.08L12,16.9A6.93,6.93,0,0,0,21.81,7.1Z" style="fill:#e8710a"></path>
+                    </g>
+                </svg>
+                </h3>
+                <div class="colab-content">
+                    <div class="colab-info">
+                        <p data-i18n="visualization.colab.paragraph1">Hemos desarrollado una herramienta para que puedas crear tus propios mosaicos utilizando tus fotografías. Transforma cualquier imagen en un mosaico compuesto por miles de fotografías más pequeñas.</p>
+                        <p data-i18n="visualization.colab.paragraph2">Con nuestro cuaderno de Google Colab podrás:</p>
+                        <ul>
+                            <li data-i18n="visualization.colab.list1">Subir tu propia imagen de referencia</li>
+                            <li data-i18n="visualization.colab.list2">Utilizar tus fotografías de congestión vehicular (o cualquier colección de imágenes)</li>
+                            <li data-i18n="visualization.colab.list3">Ajustar el tamaño de los bloques para obtener diferentes efectos</li>
+                            <li data-i18n="visualization.colab.list4">Obtener una guía de montaje numerada si quieres crear tu mosaico físicamente</li>
+                            <li data-i18n="visualization.colab.list5">Analizar qué imágenes se utilizaron más en tu composición</li>
+                        </ul>
+                        <a href="https://colab.research.google.com/drive/1sV6eb63uLDpVT65MavrrQGAIJA4kRPh5" rel="noopener" target="_blank" class="btn" style="background-color: var(--primary-color); color: var(--secondary-color);" data-i18n="visualization.colab.button">
+                            Abrir Google Colab
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div class="colab-image">
+                        <img src="img/fotomosaico_54x67.png" alt="Ejemplo de fotomosaico" />
+                        <p class="caption" data-i18n="visualization.colab.caption">Ejemplo de un fotomosaico creado con la herramienta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calendario">
+        <div class="container">
+            <h2 data-i18n="schedule.title">CALENDARIO</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3 data-i18n="schedule.item1.date">Agosto-Septiembre 2025</h3>
+                        <p data-i18n="schedule.item1.title">Documentación fotográfica y talleres participativos</p>
+                        <ul>
+                            <li data-i18n="schedule.item1.list1">Recopilación de fotografías de congestión</li>
+                            <li data-i18n="schedule.item1.list2">Sesiones fotográficas programadas</li>
+                            <li data-i18n="schedule.item1.list3">Talleres de sensibilización</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3 data-i18n="schedule.item2.date">Octubre 2025</h3>
+                        <p data-i18n="schedule.item2.title">Instalación y montaje</p>
+                        <ul>
+                            <li data-i18n="schedule.item2.list1">Procesamiento de imágenes</li>
+                            <li data-i18n="schedule.item2.list2">Montaje sobre el muro (24-30 octubre)</li>
+                            <li data-i18n="schedule.item2.list3">Inauguración coincidiendo con la Bienal</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3 data-i18n="schedule.item3.date">Noviembre 2025</h3>
+                        <p data-i18n="schedule.item3.title">Exhibición y actividades</p>
+                        <ul>
+                            <li data-i18n="schedule.item3.list1">Visitas guiadas a la instalación</li>
+                            <li data-i18n="schedule.item3.list2">Mesa redonda sobre movilidad sostenible</li>
+                            <li data-i18n="schedule.item3.list3">Documentación audiovisual del proyecto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="datos">
+        <div class="container">
+            <h2 data-i18n="numbers.title">LOS NÚMEROS</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>3000</h3>
+                    <p data-i18n="numbers.card1.description">Fotografías de congestión vehicular que compondrán el mosaico final</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <h3>3×3 m</h3>
+                    <p data-i18n="numbers.card2.description">Tamaño del mural sobre la estructura existente en la Plaza de la Virgen Blanca</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3 data-i18n="numbers.card3.number">Más de 10,000</h3>
+                    <p data-i18n="numbers.card3.description">Visitantes esperados durante la Bienal Mugak 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="participar">
+        <div class="container">
+            <h2 data-i18n="participate.title">¿CÓMO PARTICIPAR?</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 data-i18n="participate.card1.title">Fotografía</h3>
+                    <p data-i18n="participate.card1.description">Documenta atascos, congestiones y espacios dominados por vehículos en nuestra ciudad. Cada foto es un pixel que transformará la visión colectiva.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-i18n="participate.card2.title">Talleres</h3>
+                    <p data-i18n="participate.card2.description">Participa en los talleres formativos sobre fotografía urbana, movilidad sostenible y creación artística colaborativa.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 data-i18n="participate.card3.title">Montaje</h3>
+                    <p data-i18n="participate.card3.description">Únete al equipo de voluntarios para la construcción y montaje de la instalación durante la semana del 24 al 30 de octubre.</p>
+                </div>
+            </div>
+
+            <div class="join-form">
+                <h3 style="text-align: center; margin-bottom: 1.5rem;" data-i18n="participate.form.title">Formulario de inscripción</h3>
+                <form id="participacion-form">
+                    <div class="form-group">
+                        <label for="nombre" data-i18n="participate.form.name">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="participate.form.email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono" data-i18n="participate.form.phone">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="participacion" data-i18n="participate.form.participation">¿Cómo te gustaría participar?</label>
+                        <select id="participacion" name="participacion" required>
+                            <option value="" data-i18n="participate.form.select">Selecciona una opción</option>
+                            <option value="fotografia" data-i18n="participate.form.option1">Aportando fotografías</option>
+                            <option value="talleres" data-i18n="participate.form.option2">Participando en talleres</option>
+                            <option value="montaje" data-i18n="participate.form.option3">Ayudando en el montaje</option>
+                            <option value="todo" data-i18n="participate.form.option4">En todo lo posible</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="comentarios" data-i18n="participate.form.comments">Comentarios adicionales</label>
+                        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="background-color: var(--primary-color); color: var(--secondary-color);" data-i18n="participate.form.submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="img/logo_bizikleteroak_red.svg" alt="Logo Bizikleteroak" class="logo">
+            <p data-i18n="footer.organization">Gasteizko Bizikleteroak - Ciclistas Urbanos</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/bizikleteroak"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/bizikleteroak"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/bizikleteroak"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@bizikleteroak"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p data-i18n="footer.project">Proyecto para la Bienal Mugak/ 2025</p>
+            <p>&copy; 2025 Gasteizko bizikleteroak</p>
+        </div>
+    </footer>
+    <div id="toast-container"></div>
+    <script src="js/header-3d-animation.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/visualizer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
